@@ -1,0 +1,135 @@
+/* ===========================
+   CV CONTAINER
+=========================== */
+
+.cv-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 60px;
+
+  background-color: #ffffff;
+  color: #333;
+  border: 3px solid #c62828;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+}
+
+/* ===========================
+   SECTION TITLES
+=========================== */
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c62828;
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #c62828;
+
+  transition: 0.25s ease;
+}
+
+.section-title:hover {
+  color: #a10e0e;
+  letter-spacing: 2px;
+}
+
+/* ===========================
+   PROFILE TEXT
+=========================== */
+
+.profile-text {
+  font-size: 1rem;
+  color: #444;
+  text-align: justify;
+  line-height: 1.85;
+
+  margin-bottom: 35px;
+}
+
+
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  position: relative;
+
+  padding-left: 30px;
+  margin-bottom: 15px;
+
+  font-size: 0.98rem;
+  color: #444;
+
+  transition: 0.2s ease;
+}
+
+.skills-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 6px;
+  top: 0;
+
+  color: #c62828;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  transition: 0.2s ease;
+}
+
+.skills-list li:hover {
+  color: #222;
+}
+
+.skills-list li:hover::before {
+  transform: translateX(4px);
+  color: #a10e0e;
+}
+
+
+/* ===========================
+   RESPONSIVE FIXES
+=========================== */
+
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 30px 25px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-container {
+    padding: 22px 15px;
+  }
+
+  .profile-text,
+  .skills-list li {
+    font-size: 0.9rem;
+  }
+}
