@@ -1,0 +1,76 @@
+
+.centered-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Arial', sans-serif;
+}
+
+.centered-description:hover {
+  box-shadow: 0 15px 45px rgba(90, 100, 255, 0.5);
+  transform: translate(-50%, -50%) scale(1.02);
+}
+
+.centered-description h1 {
+  font-size: 2.5em;
+  color: #6a0dad;
+  margin-bottom: 15px;
+}
+
+.centered-description p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+
+
+.home-meme-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 5;
+}
+
+
+.meme-orbit {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.cat-meme {
+  width: 200px;
+  border-radius: 12px;
+  position: absolute;
+}
+
+.meme1 {
+  animation: orbit1 10s linear infinite;
+}
+
+.meme2 {
+  animation: orbit2 10s linear infinite;
+}
+
+
+@keyframes orbit1 {
+  0%   { transform: rotate(0deg)   translateX(800px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(800px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+  0%   { transform: rotate(180deg) translateX(800px) rotate(0deg); }
+  100% { transform: rotate(540deg) translateX(800px) rotate(-360deg); }
+}
