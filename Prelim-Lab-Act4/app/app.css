@@ -1,0 +1,55 @@
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background-color: #1f2937;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f9fafb;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 1rem;
+  transition: 0.3s;
+  padding-bottom: 4px;
+}
+
+/* Hover effect */
+.nav-links li a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+/* Active route */
+.active {
+  color: #ffffff !important;
+  border-bottom: 2px solid #906510; /* your theme color */
+}
+
+/* MAIN CONTENT */
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}

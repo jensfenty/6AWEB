@@ -1,0 +1,120 @@
+/* Global page styling */
+body, p, h2, table {
+  font-family: 'Arial', sans-serif;
+  color: #222;
+}
+
+/* Section spacing */
+p {
+  margin: 12px 0;
+}
+
+/* Main tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Table cells */
+td, th {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Table header */
+thead {
+  background-color: #901910;
+  color: white;
+}
+
+thead th {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Last row cleanup */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  background-color: #771f0f;
+  color: #F2E9DF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #293d17;
+  transform: translateY(-2px);
+}
+
+/* Input styling */
+input[type="text"] {
+  padding: 10px 14px;
+  border: 2px solid #901910;
+  border-radius: 8px;
+  width: 140px;
+  background: #ffe7e6;
+  font-size: 14px;
+  color: #1A2A0F;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #1A2A0F;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #ffe7e6;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-left: 5px solid #901910;
+}
+
+/* Status text */
+td p {
+  margin: 0;
+  font-weight: 600;
+}
+
+td p:nth-child(1) {
+  color: green;
+}
+
+td p:nth-child(2) {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 14px;
+  }
+
+  input[type="text"] {
+    width: 120px;
+  }
+}
